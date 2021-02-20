@@ -2,6 +2,7 @@ import Head from "next/head";
 import {META_COLOR, SITE_NAME} from "../../../utils/info";
 import MainHeader from "../../header";
 import ContactBubble from "../../ContactBubble";
+import Footer from "../../Footer";
 
 export default function MainLayout({children}) {
     return (
@@ -25,7 +26,8 @@ export default function MainLayout({children}) {
             <main className="w-full">
                 {children}
             </main>
-            <ContactBubble />
+            <ContactBubble/>
+            <Footer/>
         </>
     )
 }
