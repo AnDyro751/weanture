@@ -42,7 +42,7 @@ export default function ContactForm({}) {
     return (
         <div className="w-11/12 mx-auto">
             <div className="border-2 border-black px-3 py-4 rounded space-y-4">
-                <h3 className="text-2xl font-medium">Contáctanos</h3>
+                <h3 className="text-2xl font-bold font-title">Contáctanos</h3>
                 {error &&
                 <h4 className="text-sm text-red-700 font-medium">{error}</h4>
                 }

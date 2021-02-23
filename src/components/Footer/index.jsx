@@ -31,12 +31,12 @@ export default function Footer({}) {
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
-                            <a href={`phone:${CONTACT_PHONE}`} className="flex items-center">
+                            <a href={`tel:${CONTACT_PHONE}`} className="flex items-center">
                                 <RiWhatsappFill className={"mr-3"}/> {CONTACT_PHONE}
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
-                            <a href={`phone:${CONTACT_PHONE}`} className="flex items-center">
+                            <a href={`tel:${CONTACT_PHONE}`} className="flex items-center">
                                 <FaPhone className={"mr-3"}/> {CONTACT_PHONE}
                             </a>
                         </li>
