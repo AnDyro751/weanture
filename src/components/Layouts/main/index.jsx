@@ -21,6 +21,7 @@ export default function MainLayout({children}) {
                 <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin={"true"}/>
                 <link rel="dns-prefetch" href="https://fonts.gstatic.com/"/>
+                <link rel="shortcut icon" href="/favicon.ico"/>
             </Head>
             <MainHeader/>
             <main className="w-full">

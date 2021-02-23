@@ -7,4 +7,4 @@ export const SOCIAL_MEDIA = {
     facebook: "demospage",
     twitter: "@demopage",
     instagram: "@demopageinsta"
-}
+};
