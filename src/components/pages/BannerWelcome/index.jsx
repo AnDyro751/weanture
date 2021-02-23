@@ -1,4 +1,6 @@
 import Image from "next/image";
+import InputText from "../../Input/text";
+import ButtonsPrimary from "../../Buttons/primary";
 
 export default function BannerWelcome({}) {
     return (
@@ -19,7 +21,14 @@ export default function BannerWelcome({}) {
                 <h1 className="text-5xl font-bold font-title">
                     We Grow Digital Brands
                 </h1>
+                <h2 className="my-8 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                    consectetur
+                    debitis deleniti eveniet fuga impedit!</h2>
             </div>
+            <form className="w-full space-y-3">
+                <InputText placeholder={"Correo de contacto"} type={"text"}/>
+                <ButtonsPrimary text={"Crezcamos juntos"}/>
+            </form>
         </div>
     )
 }

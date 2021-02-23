@@ -8,7 +8,7 @@ export default function InputText({label = null, error = null, required = false,
                    name={name}
                    required={required}
                    onChange={onChange}
-                   className="bg-gray-200 w-full rounded px-4 py-3"
+                   className="bg-gray-100 w-full rounded px-4 py-4 border-2 border-black"
                    placeholder={placeholder}/>
             {/*error={formik.errors.name}*/}
             {error &&

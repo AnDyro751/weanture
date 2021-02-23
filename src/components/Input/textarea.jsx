@@ -4,7 +4,7 @@ export default function InputTextarea({value = "",required=false, name = "", onC
             <textarea value={value} name={name}
                       required={required}
                       onChange={onChange} placeholder={placeholder} rows={rows}
-                      className="rounded bg-gray-200 w-full p-3"/>
+                      className="rounded bg-gray-100 border-2 border-black w-full p-3"/>
         </div>
     )
 }
