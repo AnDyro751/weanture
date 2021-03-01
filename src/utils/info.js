@@ -1,10 +1,11 @@
-export const SITE_NAME = "Web Page Demo";
+export const SITE_NAME = "We Anture";
 export const META_COLOR = "#6366f1"
-export const CONTACT_PHONE = "+529516074586";
+export const CONTACT_PHONE = "+529514712565";
+export const FORMATTED_PHONE = "+52 (951)-471-25-65"
 export const CONTACT_URL = "https://formspree.io/f/xwkwjaro";
-export const CONTACT_EMAIL = "email@dominio.com.mx";
+export const CONTACT_EMAIL = "contact@weanture.com";
 export const SOCIAL_MEDIA = {
-    facebook: "demospage",
-    twitter: "@demopage",
-    instagram: "@demopageinsta"
+    facebook: "weanture",
+    twitter: "@weanture",
+    instagram: "@weanture"
 };

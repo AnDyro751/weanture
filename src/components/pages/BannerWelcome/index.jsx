@@ -9,9 +9,7 @@ export default function BannerWelcome({}) {
                 <div className="h-80">
                     <Image
                         src={"/pages/home/flame-1415.png"}
-                        // width={400}
                         className={"h-12 w-12"}
-                        // height={600}
                         layout={"fill"}
                         objectFit={"contain"}
                     />

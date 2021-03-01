@@ -5,3 +5,11 @@ body, html {
 .font-title {
     font-family: 'Libre Baskerville', serif !important;
 }
+
+.filter-gray {
+    filter: grayscale(50%);
+}
+
+.filter-gray:hover {
+    filter: grayscale(0%);
+}

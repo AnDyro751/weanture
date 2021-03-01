@@ -1,4 +1,4 @@
-import {CONTACT_EMAIL, CONTACT_PHONE, SOCIAL_MEDIA} from "../../utils/info";
+import {CONTACT_EMAIL, CONTACT_PHONE, SOCIAL_MEDIA, FORMATTED_PHONE} from "../../utils/info";
 import {FaPhone, FaFacebookF, FaTwitter, FaInstagram} from "react-icons/fa";
 import {MdEmail} from 'react-icons/md';
 import {RiWhatsappFill, RiInstagramFill} from 'react-icons/ri';
@@ -32,12 +32,12 @@ export default function Footer({}) {
                         </li>
                         <li className="text-gray-800 flex">
                             <a href={`tel:${CONTACT_PHONE}`} className="flex items-center">
-                                <RiWhatsappFill className={"mr-3"}/> {CONTACT_PHONE}
+                                <RiWhatsappFill className={"mr-3"}/> {FORMATTED_PHONE}
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
                             <a href={`tel:${CONTACT_PHONE}`} className="flex items-center">
-                                <FaPhone className={"mr-3"}/> {CONTACT_PHONE}
+                                <FaPhone className={"mr-3"}/> {FORMATTED_PHONE}
                             </a>
                         </li>
                     </ul>

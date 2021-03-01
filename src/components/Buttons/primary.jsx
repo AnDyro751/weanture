@@ -1,4 +1,4 @@
-export default function ButtonsPrimary({text = "", loading = false, type = "submit"}) {
+export default function ButtonsPrimary({text = "", loading = false, type = "submit", color = "light"}) {
 
     return (
         <button

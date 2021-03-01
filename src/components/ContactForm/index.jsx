@@ -9,6 +9,7 @@ import {useState} from 'react';
 export default function ContactForm({}) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [success, setSuccess] = useState(false);
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -18,7 +19,8 @@ export default function ContactForm({}) {
         validate: validate,
         onSubmit: values => {
             setLoading(true);
-            setError(null)
+            setError(null);
+            setSuccess(false);
             const form = document.querySelector("#contact_form");
             const data = new FormData(form);
             const xhr = new XMLHttpRequest();
@@ -30,8 +32,10 @@ export default function ContactForm({}) {
                 if (xhr.status === 200) {
                     form.reset();
                     formik.resetForm();
-                    setError(null)
+                    setError(null);
+                    setSuccess(true);
                 } else {
+                    setSuccess(false);
                     setError("Ha ocurrido un error")
                 }
             };
@@ -45,6 +49,10 @@ export default function ContactForm({}) {
                 <h3 className="text-2xl font-bold font-title">Contáctanos</h3>
                 {error &&
                 <h4 className="text-sm text-red-700 font-medium">{error}</h4>
+                }
+                {success &&
+                <h4 className="text-sm text-green-800 font-medium">Tu mensaje se ha enviado. En breve nos pondremos en
+                    contacto.</h4>
                 }
                 <form
                     method={"POST"}
