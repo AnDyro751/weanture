@@ -4,7 +4,7 @@ import {CONTACT_PHONE} from "../../utils/info";
 export default function ContactBubble({}) {
     return (
         <a
-            href={`https://wa.me/${CONTACT_PHONE}?text=Me%20interesa%20el%20auto%20que%20estás%20vendiendo`}
+            href={`https://wa.me/${CONTACT_PHONE}?text=Hola, mi nombre es`}
             target={"_blank"}
             rel="noopener noreferrer"
             className="w-16 h-16 rounded-full fixed bg-whatsapp items-center flex shadow bottom-12 right-6 justify-center">
