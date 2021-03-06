@@ -60,22 +60,28 @@ export default function ContactForm({}) {
                     id={"contact_form"}
                     onSubmit={formik.handleSubmit} className="space-y-4">
                     <InputText
+                        label={"Nombre"}
                         error={formik.errors.name}
                         required={true}
                         placeholder={"Nombre"}
+                        id={"contact_name"}
                         name={"name"}
                         onChange={formik.handleChange}
                         value={formik.values.name}
                     />
                     <InputText
+                        label={"Correo Electrónico"}
                         required={true}
                         error={formik.errors.email}
                         name={"email"}
                         onChange={formik.handleChange}
+                        id={"contact_email"}
                         placeholder={"Correo Electrónico"}
                         value={formik.values.email}
                     />
                     <InputTextarea
+                        id={"contact_comment"}
+                        label={"Comentarios"}
                         error={formik.errors.message}
                         required={true}
                         name={"message"}

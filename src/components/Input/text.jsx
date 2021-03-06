@@ -2,13 +2,13 @@ export default function InputText({label = null, error = null, required = false,
     return (
         <div className="w-full">
             {label &&
-            <label htmlFor={id}>{label}</label>
+            <label className="text-gray-700 text-sm"  htmlFor={id}>{label}</label>
             }
             <input type={type} id={id} value={value}
                    name={name}
                    required={required}
                    onChange={onChange}
-                   className="bg-gray-100 w-full rounded px-4 py-4 border-2 border-black"
+                   className="bg-gray-100 mt-2 w-full rounded px-4 py-4 border-2 border-black"
                    placeholder={placeholder}/>
             {/*error={formik.errors.name}*/}
             {error &&

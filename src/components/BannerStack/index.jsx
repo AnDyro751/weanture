@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {SITE_NAME} from "../../utils/info";
 
 export default function BannerStack({}) {
     const [open, setOpen] = useState(false);
@@ -43,6 +44,7 @@ const IconBanner = ({src = "", text = "", wm = true}) => {
     return (
         <div className={`relative w-3/12 mx-auto flex justify-center flex-wrap ${wm ? "mb-8" : ""}`}>
             <img
+                alt={`Image ${SITE_NAME} ${text}`}
                 className={"opacity-100 w-10 h-10 hover:opacity-100"}
                 src={src}
             />

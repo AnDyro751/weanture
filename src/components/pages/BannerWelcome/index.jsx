@@ -8,6 +8,7 @@ export default function BannerWelcome({}) {
             <div className="w-full relative z-0">
                 <div className="h-80">
                     <Image
+                        alt={"Image banner welcome"}
                         src={"/pages/home/flame-1415.png"}
                         className={"h-12 w-12"}
                         layout={"fill"}
@@ -24,7 +25,9 @@ export default function BannerWelcome({}) {
                     debitis deleniti eveniet fuga impedit!</h2>
             </div>
             <form className="w-full space-y-3">
-                <InputText placeholder={"Correo de contacto"} type={"text"}/>
+                <InputText
+                    label={"Correo Electrónico"}
+                    placeholder={"Correo de contacto"} type={"text"}/>
                 <ButtonsPrimary text={"Crezcamos juntos"}/>
             </form>
         </div>

@@ -7,6 +7,7 @@ export default function OurExperience({}) {
             <div className="w-11/12 mx-auto mb-12 flex flex-wrap">
                 <div className="w-full relative h-80 w-full pointer-events-none">
                     <Image
+                        alt={"image our experience"}
                         draggable={false}
                         className="select-none pointer-events-none"
                         src={"/pages/home/our_experience/cpWas13nPasSasP12df.png"}

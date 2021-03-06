@@ -1,10 +1,10 @@
 import Head from "next/head";
-import {META_COLOR, SITE_NAME} from "../../../utils/info";
+import {META_COLOR, SITE_DESCRIPTION, SITE_NAME} from "../../../utils/info";
 import MainHeader from "../../header";
 import ContactBubble from "../../ContactBubble";
 import Footer from "../../Footer";
 
-export default function MainLayout({children}) {
+export default function MainLayout({children, seo = {}}) {
     return (
         <>
             <Head>
@@ -14,10 +14,13 @@ export default function MainLayout({children}) {
                 <link
                     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"
                     rel="stylesheet"/>
-                <link
-                    rel="preload"
-                    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"
-                    as="stylesheet"/>
+                {/*<link*/}
+                {/*    rel="preload"*/}
+                {/*    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"*/}
+                {/*    as="style"/>*/}
+                <link rel="stylesheet" onLoad="this.onload=null;this.removeAttribute('media');"
+                      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"/>
+
                 <link rel="preconnect" href="https://d1nrrr6y3ujrjz.cloudfront.net" crossOrigin="true"/>
                 <link rel="dns-prefetch" href="https://d1nrrr6y3ujrjz.cloudfront.net"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin={"rue"}/>
@@ -25,6 +28,12 @@ export default function MainLayout({children}) {
                 <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin={"true"}/>
                 <link rel="dns-prefetch" href="https://fonts.gstatic.com/"/>
                 <link rel="shortcut icon" href="/favicon.ico"/>
+                <meta name={"description"} content={seo.description || SITE_DESCRIPTION}/>
+                <noscript>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"
+                        rel="stylesheet"/>
+                </noscript>
             </Head>
             <MainHeader/>
             <main className="w-full">
