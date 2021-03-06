@@ -40,10 +40,10 @@ export default function Sidebar({openSidebar = false, onClose}) {
                     <div className="w-full flex flex-wrap space-y-12">
                         {
                             HEADER_OPTIONS.map((el, i) => (
-                                <div key={i} className="w-full text-center flex justify-center">
-                                    <h3 className="text-2xl font-medium hover:border-indigo-300 border-b-2 border-transparent">
+                                <div key={i} className="w-full text-center">
+                                    <h3 className="text-center flex text-center justify-center">
                                         <Link href={el.href}>
-                                            <a>
+                                            <a className="text-2xl flex px-4 py-1 focus:outline-none font-medium hover:border-indigo-300 border-b-2 border-transparent text-center">
                                                 {el.name}
                                             </a>
                                         </Link>

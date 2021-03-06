@@ -7,7 +7,7 @@ export default function ContactDetails({}) {
             <div className="w-11/12 mx-auto bg-black flex">
                 <a
                     target={"_blank"}
-                    rel={"nofollow noopener"}
+                    rel={"noopener noreferrer"}
                     href={`https://wa.me/${CONTACT_PHONE}?text=Hola, mi nombre es`}
                     className="flex items-center text-white text-sm font-medium py-1">
                     <FaWhatsapp className={"text-white mr-2"}/>{FORMATTED_PHONE}

@@ -28,7 +28,7 @@ export default function Footer({}) {
                         <li className="text-gray-800 flex items-center">
                             <a
                                 target={"_blank"}
-                                rel={"nofollow noopener"}
+                                rel={"noopener noreferrer"}
                                 href={`mailto:${CONTACT_EMAIL}`} className="flex items-center">
                                 <MdEmail className={"mr-3"}/> {CONTACT_EMAIL}
                             </a>
@@ -36,7 +36,7 @@ export default function Footer({}) {
                         <li className="text-gray-800 flex">
                             <a
                                 target={"_blank"}
-                                rel={"nofollow noopener"}
+                                rel={"noopener noreferrer"}
                                 href={`https://wa.me/${CONTACT_PHONE}?text=Hola, mi nombre es`}
                                 className="flex items-center"
                             >
@@ -46,7 +46,7 @@ export default function Footer({}) {
                         <li className="text-gray-800 flex">
                             <a
                                 target={"_blank"}
-                                rel={"nofollow noopener"}
+                                rel={"noopener noreferrer"}
                                 href={`tel:${CONTACT_PHONE}`} className="flex items-center">
                                 <FaPhone className={"mr-3"}/> {FORMATTED_PHONE}
                             </a>
@@ -61,7 +61,7 @@ export default function Footer({}) {
                         <li className="text-gray-800 flex items-center">
                             <a
                                 target={"_blank"}
-                                rel={"nofollow noopener"}
+                                rel={"noopener noreferrer"}
                                 href={`https://facebook.com/${SOCIAL_MEDIA.facebook}`} className="flex items-center">
                                 <FaFacebookF className={"mr-3"}/> /{SOCIAL_MEDIA.facebook}
                             </a>
@@ -69,7 +69,7 @@ export default function Footer({}) {
                         <li className="text-gray-800 flex">
                             <a
                                 target={"_blank"}
-                                rel={"nofollow noopener"}
+                                rel={"noopener noreferrer"}
                                 href={`https://instagram.com/${SOCIAL_MEDIA.instagram}`} className="flex items-center">
                                 <RiInstagramFill className={"mr-3"}/> {SOCIAL_MEDIA.instagram}
                             </a>
@@ -77,7 +77,7 @@ export default function Footer({}) {
                         <li className="text-gray-800 flex">
                             <a
                                 target={"_blank"}
-                                rel={"nofollow noopener"}
+                                rel={"noopener noreferrer"}
                                 href={`https://twitter.com/${SOCIAL_MEDIA.twitter}`} className="flex items-center">
                                 <FaTwitter className={"mr-3"}/> {SOCIAL_MEDIA.twitter}
                             </a>
