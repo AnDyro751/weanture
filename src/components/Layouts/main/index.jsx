@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {META_COLOR, SITE_DESCRIPTION, SITE_NAME} from "../../../utils/info";
+import {META_COLOR, SITE_DESCRIPTION, SITE_HEADER} from "../../../utils/info";
 import MainHeader from "../../header";
 import ContactBubble from "../../ContactBubble";
 import Footer from "../../Footer";
@@ -8,7 +8,7 @@ export default function MainLayout({children, seo = {}}) {
     return (
         <>
             <Head>
-                <title>{SITE_NAME}</title>
+                <title>{SITE_HEADER}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="theme-color" content={META_COLOR}/>
                 <link

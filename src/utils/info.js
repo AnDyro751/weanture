@@ -1,4 +1,5 @@
 export const SITE_NAME = "We Anture";
+export const SITE_HEADER = "Anture México - Agencia de marketing digital"
 export const SITE_DESCRIPTION = "Desarrollo de software y marketing digital para PyMes";
 export const META_COLOR = "#6366f1"
 export const CONTACT_PHONE = "+529514712565";
