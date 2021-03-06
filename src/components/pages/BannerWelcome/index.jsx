@@ -19,7 +19,7 @@ export default function BannerWelcome({}) {
             </div>
             <div className="w-full mt-5">
                 <h1 className="text-5xl font-bold font-title">
-                    We Grow Digital Brands
+                    Anture Grow Digital Brands
                 </h1>
                 <h2 className="my-8 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
                     consectetur
