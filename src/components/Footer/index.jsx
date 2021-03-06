@@ -26,17 +26,28 @@ export default function Footer({}) {
                     </h5>
                     <ul className="w-full space-y-4 mt-3">
                         <li className="text-gray-800 flex items-center">
-                            <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center">
+                            <a
+                                target={"_blank"}
+                                rel={"nofollow noopener"}
+                                href={`mailto:${CONTACT_EMAIL}`} className="flex items-center">
                                 <MdEmail className={"mr-3"}/> {CONTACT_EMAIL}
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
-                            <a href={`tel:${CONTACT_PHONE}`} className="flex items-center">
+                            <a
+                                target={"_blank"}
+                                rel={"nofollow noopener"}
+                                href={`https://wa.me/${CONTACT_PHONE}?text=Hola, mi nombre es`}
+                                className="flex items-center"
+                            >
                                 <RiWhatsappFill className={"mr-3"}/> {FORMATTED_PHONE}
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
-                            <a href={`tel:${CONTACT_PHONE}`} className="flex items-center">
+                            <a
+                                target={"_blank"}
+                                rel={"nofollow noopener"}
+                                href={`tel:${CONTACT_PHONE}`} className="flex items-center">
                                 <FaPhone className={"mr-3"}/> {FORMATTED_PHONE}
                             </a>
                         </li>
@@ -48,17 +59,26 @@ export default function Footer({}) {
                     </h5>
                     <ul className="w-full space-y-4 mt-3">
                         <li className="text-gray-800 flex items-center">
-                            <a href={`https://facebook.com/${SOCIAL_MEDIA.facebook}`} className="flex items-center">
+                            <a
+                                target={"_blank"}
+                                rel={"nofollow noopener"}
+                                href={`https://facebook.com/${SOCIAL_MEDIA.facebook}`} className="flex items-center">
                                 <FaFacebookF className={"mr-3"}/> /{SOCIAL_MEDIA.facebook}
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
-                            <a href={`https://instagram.com/${SOCIAL_MEDIA.instagram}`} className="flex items-center">
+                            <a
+                                target={"_blank"}
+                                rel={"nofollow noopener"}
+                                href={`https://instagram.com/${SOCIAL_MEDIA.instagram}`} className="flex items-center">
                                 <RiInstagramFill className={"mr-3"}/> {SOCIAL_MEDIA.instagram}
                             </a>
                         </li>
                         <li className="text-gray-800 flex">
-                            <a href={`https://twitter.com/${SOCIAL_MEDIA.twitter}`} className="flex items-center">
+                            <a
+                                target={"_blank"}
+                                rel={"nofollow noopener"}
+                                href={`https://twitter.com/${SOCIAL_MEDIA.twitter}`} className="flex items-center">
                                 <FaTwitter className={"mr-3"}/> {SOCIAL_MEDIA.twitter}
                             </a>
                         </li>

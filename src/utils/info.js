@@ -11,3 +11,9 @@ export const SOCIAL_MEDIA = {
     twitter: "@weanture",
     instagram: "@weanture"
 };
+
+export const HEADER_OPTIONS = [
+    {name: "Inicio", href: "/"},
+    {name: "Sobre Nosotros", href: "/about"},
+    {name: "Contacto", href: "/contact"},
+]
