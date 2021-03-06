@@ -44,7 +44,6 @@ export default function MainHeader({transparent = false}) {
                                 <a>
                                     <Image
                                         src="/logo.png"
-                                        objectFit={"contain"}
                                         title={`${SITE_NAME} logo`}
                                         alt={`${SITE_NAME} logo`}
                                         width={80}
