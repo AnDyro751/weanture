@@ -7,7 +7,7 @@ export default function ContactBubble({}) {
             href={`https://wa.me/${CONTACT_PHONE}?text=Hola, mi nombre es`}
             target={"_blank"}
             rel="noopener noreferrer"
-            className="w-16 h-16 rounded-full fixed bg-whatsapp items-center flex shadow bottom-12 right-6 justify-center">
+            className="w-16 h-16 rounded-full fixed bg-whatsapp items-center flex shadow bottom-12 right-6 justify-center z-20">
             <FaWhatsapp className="text-white fill-current text-current" size={30}/>
         </a>
     )
