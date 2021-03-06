@@ -26,6 +26,7 @@ export default function BannerWelcome({}) {
             </div>
             <form className="w-full space-y-3">
                 <InputText
+                    id={"welcome_email"}
                     label={"Correo Electrónico"}
                     placeholder={"Correo de contacto"} type={"text"}/>
                 <ButtonsPrimary text={"Crezcamos juntos"}/>
