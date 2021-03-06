@@ -80,7 +80,10 @@ const Service = ({name, image}) => {
                 <h5 className="font-bold text-lg">{name}</h5>
             </div>
             <div className="w-full row-start-4">
-                <img alt="svgImg" className="h-8 w-8" src={image}/>
+                <img alt="svgImg" className="h-8 w-8"
+                     height={15}
+                     width={15}
+                     src={image}/>
             </div>
         </div>
     )

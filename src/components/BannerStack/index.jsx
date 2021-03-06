@@ -48,6 +48,8 @@ const IconBanner = ({src = "", text = "", wm = true}) => {
                 alt={`Image ${SITE_NAME} ${text}`}
                 className={"-10 h-10"}
                 src={src}
+                height={40}
+                width={40}
             />
             <p className="text-xs text-gray-700 font-bold mx-auto mt-3 w-full text-center">{text}</p>
         </div>
