@@ -47,8 +47,8 @@ export default function MainHeader({transparent = false}) {
                                         objectFit={"contain"}
                                         title={`${SITE_NAME} logo`}
                                         alt={`${SITE_NAME} logo`}
-                                        width={101}
-                                        height={101}
+                                        width={80}
+                                        height={80}
                                     />
                                 </a>
                             </Link>
