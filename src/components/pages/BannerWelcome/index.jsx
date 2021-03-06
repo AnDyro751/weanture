@@ -8,6 +8,7 @@ export default function BannerWelcome({}) {
             <div className="w-full relative z-0">
                 <div className="h-80">
                     <Image
+                        priority={true}
                         alt={"Image banner welcome"}
                         src={"/pages/home/flame-1415.png"}
                         className={"h-12 w-12"}

@@ -44,8 +44,9 @@ const IconBanner = ({src = "", text = "", wm = true}) => {
     return (
         <div className={`relative w-3/12 mx-auto flex justify-center flex-wrap ${wm ? "mb-8" : ""}`}>
             <img
+                aspe
                 alt={`Image ${SITE_NAME} ${text}`}
-                className={"opacity-100 w-10 h-10 hover:opacity-100"}
+                className={"-10 h-10"}
                 src={src}
             />
             <p className="text-xs text-gray-700 font-bold mx-auto mt-3 w-full text-center">{text}</p>
