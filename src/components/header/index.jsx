@@ -1,4 +1,3 @@
-import {FcMenu} from 'react-icons/fc';
 import {HEADER_OPTIONS, SITE_NAME} from "../../utils/info";
 import Link from 'next/link';
 import {useEffect, useState} from 'react';
@@ -6,6 +5,7 @@ import {throttle} from 'lodash'
 import Image from 'next/image'
 import ContactDetails from "./ContactDetails";
 import Sidebar from "./Sidebar";
+import {AiOutlineMenu} from 'react-icons/ai';
 
 export default function MainHeader({transparent = false}) {
 
@@ -85,8 +85,8 @@ export default function MainHeader({transparent = false}) {
                         </div>
                         <button
                             onClick={handleOpen}
-                            className="md:hidden flex focus:outline-none cursor-pointer hover:bg-indigo-300 items-center bg-indigo-200 rounded-xl h-11 w-11 justify-center cursor-pointer select-none text-black">
-                            <FcMenu className="fill-current text-black text-2xl text-current"/>
+                            className="md:hidden flex focus:outline-none cursor-pointer hover:bg-gray-800 items-center bg-black rounded-xl h-11 w-11 justify-center cursor-pointer select-none text-white">
+                            <AiOutlineMenu size={20} className="fill-current text-white text-2xl text-white"/>
                         </button>
                     </div>
                 </div>
