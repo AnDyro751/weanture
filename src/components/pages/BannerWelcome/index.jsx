@@ -30,7 +30,9 @@ export default function BannerWelcome({}) {
                     <div className="hidden md:block">
                         <form className="w-full space-y-3 mt-12">
                             <InputText
-                                id={"welcome_email"}
+                                id={"welcome_email_xl"}
+                                onChange={() => {
+                                }}
                                 label={"Correo Electrónico"}
                                 placeholder={"Correo de contacto"} type={"text"}/>
                             <ButtonsPrimary text={"¡Crezcamos juntos ya!"}/>
@@ -41,6 +43,9 @@ export default function BannerWelcome({}) {
             <div className="w-11/12 mx-auto md:hidden">
                 <form className="w-full space-y-3">
                     <InputText
+                        onChange={() => {
+
+                        }}
                         id={"welcome_email"}
                         label={"Correo Electrónico"}
                         placeholder={"Correo de contacto"} type={"text"}/>

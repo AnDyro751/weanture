@@ -14,6 +14,17 @@ export default function BannerStack({}) {
                 <IconBanner src={"/pages/home/icons8-amazon-web-services-100.svg"} text={"AWS"}/>
                 <IconBanner src={"/pages/home/icons8-apollo-100.svg"} text={"Apollo"}/>
                 <IconBanner src={"/pages/home/icons8-javascript-100.svg"} text={"JavaScript"}/>
+                <div className="w-full flex-wrap hidden md:flex">
+                    <IconBanner src={"/pages/home/icons8-nodejs-100.svg"} text={"Node JS"}/>
+                    <IconBanner src={"/pages/home/icons8-ruby-programming-language-100.svg"}
+                                text={"Ruby on Rails"}/>
+                    <IconBanner src={"/pages/home/icons8-git-100.svg"} text={"Git"}/>
+                    <IconBanner src={"/pages/home/icons8-github-100.svg"} text={"Github"}/>
+                    <IconBanner src={"/pages/home/icons8-gitlab-100.svg"} text={"Gitlab"}/>
+                    <IconBanner src={"/pages/home/icons8-graphql-100.svg"} text={"GraphQL"}/>
+                    <IconBanner src={"/pages/home/icons8-react-native-100.svg"} text={"React Native"}/>
+                    <IconBanner src={"/pages/home/icons8-firebase-100.svg"} text={"Firebase"}/>
+                </div>
                 {
                     open &&
                     <div className="w-full flex flex-wrap">
@@ -42,9 +53,8 @@ export default function BannerStack({}) {
 
 const IconBanner = ({src = "", text = "", wm = true}) => {
     return (
-        <div className={`relative w-3/12 mx-auto flex justify-center flex-wrap ${wm ? "mb-8" : ""}`}>
+        <div className={`relative w-3/12 md:w-2/12 mx-auto flex justify-center flex-wrap ${wm ? "mb-8 md:mb-12" : ""}`}>
             <img
-                aspe
                 alt={`Image ${SITE_NAME} ${text}`}
                 className={"-10 h-10"}
                 src={src}

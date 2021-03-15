@@ -13,23 +13,20 @@ export default function MainHeader({transparent = false}) {
     const [openMenu, setOpenMenu] = useState(false);
     useEffect(() => {
         // console.log(throttle, "SS")
-        window.addEventListener("scroll", throttle(boxHeader, 400));
-        setNewStatus()
+        var throttled = throttle(setNewStatus, 1000)
+        window.addEventListener("scroll", throttled);
         return () => {
-            boxHeader()
+            window.removeEventListener("scroll", throttled);
+            throttle.cancel;
         }
     }, []);
-
-    const boxHeader = () => {
-        setNewStatus();
-    }
 
     const handleOpen = () => {
         setOpenMenu(!openMenu);
     };
 
     const setNewStatus = () => {
-        console.log("HOLA new status");
+        console.log("HOLA new status", Date.now());
         if (window.scrollY > 100) {
             setActiveHeader(true);
         } else {
