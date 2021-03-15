@@ -4,7 +4,7 @@ import ButtonsPrimary from "../../Buttons/primary";
 
 export default function BannerWelcome({}) {
     return (
-        <div className="bg-yellow-100 pb-12 mb-12">
+        <div className="bg-yellow-100 shadow-2xl pb-12 mb-12">
             <div
                 className="w-11/12 mx-auto flex flex-wrap md:flex-nowrap md:flex-row-reverse md:items-center md:h-screen">
                 <div className="w-full relative z-0 md:w-7/12 md:ml-12">
@@ -35,7 +35,7 @@ export default function BannerWelcome({}) {
                                 }}
                                 label={"Correo Electrónico"}
                                 placeholder={"Correo de contacto"} type={"text"}/>
-                            <ButtonsPrimary text={"¡Crezcamos juntos ya!"}/>
+                            <ButtonsPrimary text={"¡CREZCAMOS JUNTOS YAA!"}/>
                         </form>
                     </div>
                 </div>

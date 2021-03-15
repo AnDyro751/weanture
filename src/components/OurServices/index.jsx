@@ -75,7 +75,7 @@ export default function OurServices({}) {
 
 const Service = ({name, image}) => {
     return (
-        <div className="col-span-6 rounded transition duration-150 hover:bg-indigo-200 bg-gray-100 grid grid-rows-4 grid-flow-col shadow-xl p-4 h-40 mx-2 my-4">
+        <div className="col-span-6 md:col-span-3 rounded transition duration-150 hover:bg-blue-100 bg-gray-100 grid grid-rows-4 grid-flow-col shadow-xl p-4 h-40 mx-2 my-4">
             <div className="w-full mt-3">
                 <h5 className="font-bold text-lg">{name}</h5>
             </div>

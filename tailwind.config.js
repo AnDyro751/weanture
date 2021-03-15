@@ -13,7 +13,10 @@ module.exports = {
                 ...theme("colors"),
                 "whatsapp": "#25d366",
                 main: "#c8ff00"
-            })
+            }),
+            height: {
+                xxl: "36em"
+            }
         },
     },
     variants: {

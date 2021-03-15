@@ -46,7 +46,7 @@ export default function MainHeader({transparent = false}) {
                 openSidebar={openMenu}/>
             <header
                 className={`w-full flex items-center flex-wrap z-40 sticky top-0 ${activeHeader ? "shadow bg-white" : ""} ${transparent ? "" : "bg-white"}`}>
-                <div className="w-11/12 mx-auto flex items-center py-1 py-2 md:py-3">
+                <div className="w-11/12 mx-auto flex items-center py-1 py-2 md:py-4">
                     <div className="w-10/12 md:w-6/12 flex items-center space-x-4">
                         <div className="relative h-7 w-7">
                             <Link href={"/"}>

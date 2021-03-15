@@ -24,7 +24,7 @@ export default function BannerStack({}) {
                 <IconBanner src={"/pages/home/icons8-nodejs-100.svg"} text={"Node JS"}/>
                 <IconBanner src={"/pages/home/icons8-ruby-programming-language-100.svg"}
                             text={"Ruby on Rails"}/>
-                <h3 className="mb-20 mt-8 font-bold text-3xl font-title w-full text-center">¡Y muuuchoo más!</h3>
+                <h3 className="mt-8 font-bold text-3xl font-title w-full text-center">¡Y muuuchoo más!</h3>
             </div>
             <div className="w-11/12 relative mx-auto flex flex-wrap justify-start md:hidden">
                 <h3 className="mb-12 font-bold text-2xl font-title w-full text-center">Especializados en</h3>

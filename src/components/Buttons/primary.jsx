@@ -2,7 +2,7 @@ export default function ButtonsPrimary({text = "", loading = false, type = "subm
 
     return (
         <button
-            className="text-white w-full flex h-14 items-center justify-center text-center font-medium shadow hover:opacity-80 hover:shadow-lg bg-black px-6 py-4 rounded-lg focus:outline-none">
+            className="text-white w-full flex h-14 items-center justify-center text-center font-medium shadow hover:opacity-80 hover:shadow-lg bg-black px-6 py-4 rounded text-sm focus:outline-none">
             {loading &&
             <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                  viewBox="0 0 24 24">
