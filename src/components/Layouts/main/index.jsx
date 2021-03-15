@@ -12,14 +12,15 @@ export default function MainLayout({children, seo = {}}) {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="theme-color" content={META_COLOR}/>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Libre+Baskerville:wght@700&display=swap"
                     rel="stylesheet"/>
                 {/*<link*/}
                 {/*    rel="preload"*/}
                 {/*    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"*/}
                 {/*    as="style"/>*/}
                 <link rel="stylesheet" onLoad="this.onload=null;this.removeAttribute('media');"
-                      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"/>
+                      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Libre+Baskerville:wght@700&display=swap"
+                />
 
                 {/*<link rel="preconnect" href="https://d1nrrr6y3ujrjz.cloudfront.net" crossOrigin="true"/>*/}
                 {/*<link rel="dns-prefetch" href="https://d1nrrr6y3ujrjz.cloudfront.net"/>*/}
@@ -39,7 +40,7 @@ export default function MainLayout({children, seo = {}}) {
                 <meta property="business:contact_data:country_name" content="mx"/>
                 <noscript>
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Libre+Baskerville:wght@700&display=swap"
                         rel="stylesheet"/>
                 </noscript>
             </Head>
