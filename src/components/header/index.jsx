@@ -1,11 +1,10 @@
 import {FcMenu} from 'react-icons/fc';
-import {SITE_NAME} from "../../utils/info";
+import {HEADER_OPTIONS, SITE_NAME} from "../../utils/info";
 import Link from 'next/link';
 import {useEffect, useState} from 'react';
 import {throttle} from 'lodash'
 import Image from 'next/image'
 import ContactDetails from "./ContactDetails";
-import {AiOutlineClose} from 'react-icons/ai';
 import Sidebar from "./Sidebar";
 
 export default function MainHeader({transparent = false}) {
@@ -50,8 +49,8 @@ export default function MainHeader({transparent = false}) {
                 openSidebar={openMenu}/>
             <header
                 className={`w-full flex items-center flex-wrap z-40 sticky top-0 ${activeHeader ? "shadow bg-white" : ""} ${transparent ? "" : "bg-white"}`}>
-                <div className="w-11/12 mx-auto flex items-center py-1 py-2">
-                    <div className="w-10/12 flex items-center space-x-4">
+                <div className="w-11/12 mx-auto flex items-center py-1 py-2 md:py-3">
+                    <div className="w-10/12 md:w-6/12 flex items-center space-x-4">
                         <div className="relative h-7 w-7">
                             <Link href={"/"}>
                                 <a>
@@ -66,15 +65,27 @@ export default function MainHeader({transparent = false}) {
                             </Link>
                         </div>
                         <Link href={"/"}>
-                            <a className="font-bold text-lg py-1">
+                            <a className="font-bold text-lg md:text-2xl py-1 text-gray-900">
                                 {SITE_NAME}
                             </a>
                         </Link>
                     </div>
-                    <div className="w-2/12 flex justify-end">
+
+                    <div className="w-2/12 md:w-6/12 flex justify-end">
+                        <div className="w-full hidden md:flex items-center justify-end space-x-12">
+                            {HEADER_OPTIONS.map((el, i) => (
+                                <div key={i} className="">
+                                    <Link href={el.href}>
+                                        <a className="text-gray-700 hover:underline">
+                                            {el.name}
+                                        </a>
+                                    </Link>
+                                </div>
+                            ))}
+                        </div>
                         <button
                             onClick={handleOpen}
-                            className="flex focus:outline-none cursor-pointer hover:bg-indigo-300 items-center bg-indigo-200 rounded-xl h-11 w-11 justify-center cursor-pointer select-none text-black">
+                            className="md:hidden flex focus:outline-none cursor-pointer hover:bg-indigo-300 items-center bg-indigo-200 rounded-xl h-11 w-11 justify-center cursor-pointer select-none text-black">
                             <FcMenu className="fill-current text-black text-2xl text-current"/>
                         </button>
                     </div>

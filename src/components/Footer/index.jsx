@@ -8,7 +8,7 @@ export default function Footer({}) {
         <div className="w-full bg-gray-100 mt-10 py-8">
             <div className="w-11/12 mx-auto flex flex-wrap space-y-8">
                 <div className="w-full">
-                    <h4 className="font-medium text-lg">
+                    <h4 className="font-medium font-title text-lg">
                         Información
                     </h4>
                     <ul className="w-full space-y-4 mt-3">
@@ -21,9 +21,9 @@ export default function Footer({}) {
                     </ul>
                 </div>
                 <div className="w-full">
-                    <h5 className="font-medium text-lg">
+                    <h4 className="font-medium font-title text-lg">
                         Contacto
-                    </h5>
+                    </h4>
                     <ul className="w-full space-y-4 mt-3">
                         <li className="text-gray-800 flex items-center">
                             <a
@@ -54,9 +54,9 @@ export default function Footer({}) {
                     </ul>
                 </div>
                 <div className="w-full">
-                    <h5 className="font-medium text-lg">
+                    <h4 className="font-medium font-title text-lg">
                         Social
-                    </h5>
+                    </h4>
                     <ul className="w-full space-y-4 mt-3">
                         <li className="text-gray-800 flex items-center">
                             <a
